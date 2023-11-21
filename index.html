@@ -5,16 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHI Architecture - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+      src="https://kit.fontawesome.com/588bcee0c3.js"
+      crossorigin="anonymous"
+    ></script>
 </head>
 <body>
     <header>
-
+        <div class="mobile-header">
+            <a class="logo" href="index.html">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="images/site-logo.png">
+                    <img src="images/site-logo-mobile.png" alt="site logo">
+                </picture>
+            </a>
+            <a class="toggle" onclick="showNav()"><i class="fa-solid fa-bars fa-lg" style="color: #424b5a"></i
+                ></a>
+            <nav id="nav-items">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                  </ul>
+            </nav>
+        </div>
     </header>
     <main>
 
     </main>
     <footer>
-        
+
     </footer>
+    <script>
+        function showNav() {
+          var element = document.getElementById("nav-items");
+          element.classList.toggle("show-items");
+        }
+      </script>
 </body>
 </html>
