@@ -86,12 +86,13 @@ nav a {
     display: inline-block;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
-    margin-bottom: 52px;
+    margin-bottom: 55px;
 }
 
 /*Project section for mobile*/
 .projects-section {
     text-align: center;
+    margin-bottom: 55px;
 }
 .projects-section h2 {
     margin: 55px 0 35px;
@@ -124,4 +125,34 @@ nav a {
 }
 .projects-section p {
     margin: 10px 0 0;
+}
+
+/*Footer section for mobile*/
+footer {
+    background-color: #282525;
+    color: #fff;
+}
+footer .col {
+    padding-top: 55px;
+}
+footer .col-3 {
+    padding-bottom: 39px;
+}
+footer h4 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+footer a {
+    color: #F67F00;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 2;
+}
+.footer-copyright {
+    border-top: 2px solid #aaa;
+    padding-bottom: 16px;
+}
+.footer-copyright p {
+    margin-bottom: 0;
 }
