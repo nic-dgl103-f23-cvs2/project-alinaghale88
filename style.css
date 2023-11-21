@@ -47,6 +47,7 @@ header nav {
 }
 .show-items {
     display: block;
+    z-index: 1;
 }
 nav ul {
     list-style-type: none;
@@ -60,25 +61,34 @@ nav a {
     line-height: 1.5;
 }
 .mobile-container {
-    max-width: 290px;
+    max-width: 340px;
     margin: auto;
 }
 
 /*Hero section for mobile*/
+.hero {
+    height: auto;
+    position: relative;
+    text-align: center;
+    background-color: #282525;
+    height: 650px;
+}
 .banner-image {
-    height: 230px;
+    height: 100%;
 }
 .banner-image img {
     width: 100%;
-    height: 100%;
+    height: 650px;
     object-fit: cover;
-}
-.hero {
-    text-align: center;
-    background-color: #282525;
+    opacity: 0.8;
 }
 .hero .text-content {
     padding-top: 30px;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    right: 0;
+    left: 0;
 }
 .hero p {
     font-size: 2.1rem;
@@ -91,7 +101,7 @@ nav a {
 }
 .hero a {
     text-decoration: none;
-    padding: 13px 45px;
+    padding: 13px 40px;
     background-color: #F67F00;
     color: #fff;
     display: inline-block;
@@ -103,21 +113,32 @@ nav a {
 /*Testimonial section for mobile*/
 .testimonials {
     text-align: center;
-    padding-bottom: 55px;
 }
 .testimonial-list {
-    padding: 16px 12px;
+    padding: 20px 25px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    text-align: left;
+    margin-bottom: 35px;
 }
 .testimonials h2 {
-    margin-top: 55px;
+    margin: 55px 0 15px;
 }
-.testimonial-image {
-    width: 100px;
-    height: 100px;
-    margin: auto;
+.testimonial-description {
+    margin-bottom: 40px;
 }
-.testimonial-image img {
+.client-info {
+    display: flex;
+    margin-top: 24px;
+}
+.client-text {
+    padding-left: 20px;
+    width: 60%;
+}
+.client-image {
+    width: 80px;
+    height: 80px;
+}
+.client-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -133,9 +154,17 @@ nav a {
 .testimonials .client-category {
     margin-top: 0;
     font-size: 1.4rem;
+    color: #aaa;
 }
-.testimonials .pagination {
-    margin-top: 25px;
+.testimonials a {
+    text-decoration: none;
+    padding: 13px 40px;
+    border: 1px solid #F67F00;
+    color: #F67F00;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 55px;
 }
 
 /*Project section for mobile*/
@@ -205,3 +234,4 @@ footer a {
 .footer-copyright p {
     margin-bottom: 0;
 }
+
