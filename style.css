@@ -33,6 +33,15 @@ h2:after {
 body p {
     line-height: 1.5;
 }
+.mobile-container {
+    max-width: 340px;
+    margin: auto;
+}
+.section-description {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
 /*Header styling for mobile*/
 header {
     background-color: #963947;
@@ -92,13 +101,11 @@ nav a {
     line-height: 1.5;
     font-size: 1.4rem;
 }
-.mobile-container {
-    max-width: 340px;
-    margin: auto;
+.home a.active-home {
+    color: #963947;
 }
-.section-description {
+.section-intro {
     text-align: center;
-    margin-bottom: 60px;
 }
 
 /*Hero section for mobile*/
@@ -340,7 +347,6 @@ footer a {
     .section-intro {
         max-width: 830px;
         margin: auto;
-        text-align: center;
     }
     /*Header for desktop*/
     header {
@@ -394,7 +400,7 @@ footer a {
         top: 50%;
         left: 50%;
         transform: translateX(-50%) translateY(-37%);
-        max-width: 940px;
+        max-width: 830px;
     }
     .hero h1, .hero p {
         color: #fff;
