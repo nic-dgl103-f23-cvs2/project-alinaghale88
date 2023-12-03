@@ -20,7 +20,7 @@ h2 {
     position: relative;
     display: inline-block;
 }
-h2:after {
+.home h2:after {
     content: '';
     width: 100%;
     height: 40%;
@@ -52,6 +52,7 @@ header {
 .mobile-header {
     display: flex;
     align-items: center;
+    position: relative;
 }
 .mobile-header .toggle {
     display: block;
@@ -86,9 +87,6 @@ nav a {
     text-transform: uppercase;
     line-height: 1.5;
     font-size: 1.4rem;
-}
-.home a.active-home {
-    color: #963947;
 }
 .section-intro {
     text-align: center;
@@ -247,12 +245,12 @@ nav a {
     margin: 100px 0 0;
     text-transform: uppercase;
 }
-.projects-section .project-img {
+.project-img {
     height: 300px;
     position: relative;
     margin-bottom: 3px;
 }
-.projects-section .project-img img {
+.project-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -419,7 +417,7 @@ footer a {
         flex-wrap: wrap;
         gap: 3px 6px;
     }
-    .projects-section .project-img {
+    .project-img {
         width: calc(33.33% - 4px);
         height: unset;
         min-height: 380px;
@@ -429,7 +427,7 @@ footer a {
         inset: 30px;
         width: unset;
     }
-    .projects-section .project-img:hover .text-holder {
+    .project-img:hover .text-holder {
         visibility: visible;
     }
     .projects-section .inner-text-holder {
@@ -459,4 +457,64 @@ footer a {
 }
 
 /* Projects page styling for mobile screen */
+.projects header {
+    position: static;
+    background-color: #963947;
+}
+.projects .tab-content {
+    display: none;
+    text-align: center;
+}
+.projects .tab-content.active {
+    display: block;
+}
+.projects h1 {
+    text-align: center;
+    margin: 60px 0;
+}
+.projects .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 60px;
+} 
+.tabs a {
+    background-color: #0A0908;
+    color: #fff;
+    padding: 17px 32px;
+}
+.projects .text-holder {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(10, 9, 8, 0.8);
+    color: #DBDBDB;
+    box-sizing: border-box;
+    padding: 16px;
+}
+.projects h3 {
+    margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+}
 
+/* Projects Page styling for desktop screens */
+@media only screen and (min-width: 1200px) {
+    .projects .text-holder {
+        visibility: hidden;
+        inset: 30px;
+        width: unset;
+    }
+    .projects .inner-text-holder {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 100%;
+    }
+    .projects .text-holder p {
+        margin-bottom: 0;
+    }
+}
