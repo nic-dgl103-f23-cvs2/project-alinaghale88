@@ -389,7 +389,7 @@ footer a {
         color: #fff;
     }
     .hero h1 {
-        font-size: 4rem;
+        font-size: 4.4rem;
     }
     .hero a {
         margin: 0 15px;
@@ -420,7 +420,7 @@ footer a {
     .project-img {
         width: calc(33.33% - 4px);
         height: unset;
-        min-height: 380px;
+        min-height: 370px;
     }
     .projects-section .text-holder {
         visibility: hidden;
@@ -480,9 +480,13 @@ footer a {
     margin-bottom: 60px;
 } 
 .tabs a {
-    background-color: #0A0908;
-    color: #fff;
+    background-color: #F1F0CC;
+    color: #0A0908;
     padding: 17px 32px;
+}
+.tabs a:first-child {
+    background-color: #0A0908;
+    color: #F1F0CC;
 }
 .projects .text-holder {
     position: absolute;
@@ -499,9 +503,15 @@ footer a {
     font-size: 2rem;
     margin: 0;
 }
+.projects main .mobile-container {
+    margin-bottom: 75px;
+}
 
 /* Projects Page styling for desktop screens */
 @media only screen and (min-width: 1200px) {
+    .projects h1 {
+        font-size: 4.4rem;
+    }
     .projects .text-holder {
         visibility: hidden;
         inset: 30px;
