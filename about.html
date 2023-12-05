@@ -71,6 +71,44 @@
         </table>
         </div>
       </section>
+      <section class="appointment mobile-container">
+        <form action="#" method="post">
+          <h2>Book an Appointment Today</h2>
+          <div class="two-cols">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="two-cols">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required>
+  
+          <label for="project-type">Type of Project:</label>
+          <select id="project-type" name="project-type" required>
+              <option value="" disabled selected>Select project type</option>
+              <option value="residential">Residential</option>
+              <option value="commercial">Commercial</option>
+              <option value="renovation">Small Institutional</option>
+          </select>
+        </div>
+  
+          <label for="project-details">Project Details:</label>
+          <textarea id="project-details" name="project-details" rows="4" required></textarea>
+
+          <div class="two-cols">
+          <label for="date">Preferred Meeting Date:</label>
+          <input type="date" id="date" name="date" required>
+  
+          <label for="time">Preferred Meeting Time:</label>
+          <input type="time" id="time" name="time" required>
+          </div>
+  
+          <button type="submit" class="submit-btn">Book Appointment</button>
+      </form>
+      </section>
     </main>
     <footer>
       <div class="footer-top mobile-container">

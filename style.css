@@ -562,8 +562,41 @@ footer a {
 .about .overflow-controller {
     overflow-x: auto;
 }
-.about .affiliation h2 {
+.about .affiliation h2, .about .appointment h2 {
     margin: 60px 0 40px;
+}
+.about .appointment h2 {
+    text-align: center;
+}
+.about .appointment form {
+    display: flex;
+    flex-direction: column;
+}
+.submit-btn {
+    text-decoration: none;
+    padding: 17px 32px;
+    width: 260px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin: 20px auto 60px;
+    color: #fff;
+    background-color: #963947;
+    border: none;
+    font-size: 1.6rem;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
 }
 
 /* About Page styling for desktop screens */
@@ -600,10 +633,32 @@ footer a {
     .about .architect-section-text h2 {
         margin-top: 0;
     }
-    .about .affiliation h2 {
+    .about .affiliation h2, .about .appointment h2 {
         margin-top: 75px;
     }
     .about .affiliation {
         margin-bottom: 75px;
     }
+    .about .appointment form {
+        max-width: 830px;
+        margin: auto;
+    }
+    .about .two-cols {
+        display: flex;
+        gap: 15px;
+    }
+    .about .two-cols input {
+        margin-right: 20px;
+        width: 30%;
+    }
+    .about #project-type {
+        width: 30%;
+    }
+    .about #name {
+        margin-right: 51px;
+    }
+    .about .submit-btn {
+        margin-top: 40px;
+    }
 }
+
