@@ -31,7 +31,7 @@ h2 {
     z-index: -1;
 }
 body p {
-    line-height: 1.5;
+    line-height: 1.75;
 }
 .mobile-container {
     max-width: 340px;
@@ -328,7 +328,7 @@ footer a {
         max-width: 1140px;
     }
     h2 {
-        font-size: 3.1rem;
+        font-size: 3.3rem;
     }
     .section-intro {
         max-width: 830px;
@@ -537,10 +537,12 @@ footer a {
 }
 .about .architect-section {
     background-color: #F1F0CC;
+    padding-bottom: 60px;
 }
 .about .architect-section img {
     display: block;
     padding-top: 18px;
+    width: 100%;
 }
 
 /* About Page styling for desktop screens */
@@ -548,5 +550,30 @@ footer a {
     .about .intro {
         max-width: 830px;
         margin: 0 auto 60px;
+    }
+    .about .architect-section .mobile-container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .about .architect-section-text, .about .architect-section img {
+        width: 50%;
+    }
+    .about .architect-section-text {
+        max-width: 570px;
+        margin: 0 0 0 auto;
+        padding-right: 80px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about .architect-section img {
+        padding: 0;
+        max-height: 600px;
+        object-fit: cover;
+        object-position: top;
+    }
+    .about .architect-section-text h2 {
+        margin-top: 0;
     }
 }
