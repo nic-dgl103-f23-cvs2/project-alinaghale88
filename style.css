@@ -137,6 +137,16 @@ nav a {
     color: #fff;
     background-color: #963947;
 }
+.hero a:hover {
+    background-color: #963947;
+    transition: background-color 0.5s ease;
+    color: #fff;
+}
+.hero a.cta-btn-1:hover {
+    background-color: #fff;
+    transition: background-color 0.5s ease;
+    color: #963947;
+}
 
 /*Services section for mobile*/
 .number-icon {
