@@ -457,7 +457,7 @@ footer a {
 }
 
 /* Projects page styling for mobile screen */
-.projects header {
+.projects header, .about header {
     position: static;
     background-color: #963947;
 }
@@ -468,9 +468,9 @@ footer a {
 .projects .tab-content.active {
     display: block;
 }
-.projects h1 {
+.projects h1, .about h1 {
     text-align: center;
-    margin: 60px 0;
+    margin: 35px 0;
 }
 .projects .tabs {
     display: flex;
@@ -509,8 +509,9 @@ footer a {
 
 /* Projects Page styling for desktop screens */
 @media only screen and (min-width: 1200px) {
-    .projects h1 {
+    .projects h1, .about h1 {
         font-size: 4.4rem;
+        margin: 60px 0;
     }
     .projects .text-holder {
         visibility: hidden;
@@ -526,5 +527,26 @@ footer a {
     }
     .projects .text-holder p {
         margin-bottom: 0;
+    }
+}
+
+/* About page styling for mobile screen */
+.about .intro {
+    text-align: justify;
+    margin-bottom: 60px;
+}
+.about .architect-section {
+    background-color: #F1F0CC;
+}
+.about .architect-section img {
+    display: block;
+    padding-top: 18px;
+}
+
+/* About Page styling for desktop screens */
+@media only screen and (min-width: 1200px) {
+    .about .intro {
+        max-width: 830px;
+        margin: 0 auto 60px;
     }
 }
