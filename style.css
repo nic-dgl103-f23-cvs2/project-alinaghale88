@@ -1,0 +1,684 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem; /*Changed this to compliment the font style that I am using for my website content*/
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.02em;
+}
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #0a0908;
+}
+h1 {
+  font-size: 3.1rem;
+}
+h2 {
+  font-size: 2.8rem;
+  word-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+.home h2:after {
+  content: "";
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  background: #f1f0cc;
+  top: 5px;
+  left: 0;
+  z-index: -1;
+}
+body p {
+  line-height: 1.75;
+}
+.mobile-container {
+  max-width: 340px;
+  margin: auto;
+}
+.section-description {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/*Header styling for mobile*/
+header {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 999;
+}
+.mobile-header {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.mobile-header .toggle {
+  display: block;
+  width: 100%;
+  text-align: right;
+  margin-right: 20px;
+}
+header nav {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  top: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.show-items {
+  display: block;
+  z-index: 1;
+}
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 12px 0;
+  padding: 0;
+}
+nav ul li {
+  padding: 10px 0;
+}
+nav a {
+  color: #9e9e9e;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-size: 1.4rem;
+}
+.section-intro {
+  text-align: center;
+}
+
+/*Hero section for mobile*/
+.hero {
+  height: auto;
+  position: relative;
+  text-align: center;
+  background-color: #f1f0cc;
+}
+.banner-image {
+  height: 255px;
+  background: #0a0908;
+}
+.banner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+.hero .text-content {
+  padding: 60px 0 75px;
+  width: 100%;
+}
+.hero p {
+  margin: 0 0 40px;
+  font-weight: 500;
+  color: #0a0908;
+}
+.hero h1 {
+  margin: 0 0 30px;
+}
+.hero a {
+  text-decoration: none;
+  padding: 17px 32px;
+  width: 195px;
+  background-color: #fff;
+  color: #963947;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.hero a.cta-btn-1 {
+  margin-bottom: 20px;
+  color: #fff;
+  background-color: #963947;
+}
+.hero a:hover {
+  background-color: #963947;
+  transition: background-color 0.5s ease;
+  color: #fff;
+}
+.hero a.cta-btn-1:hover {
+  background-color: #fff;
+  transition: background-color 0.5s ease;
+  color: #963947;
+}
+
+/*Services section for mobile*/
+.number-icon {
+  width: 65px;
+  height: 65px;
+  border: 2px solid #595959;
+  border-radius: 50%;
+  position: relative;
+}
+.services h2 {
+  text-align: center;
+  margin: 60px 0 0;
+  text-transform: uppercase;
+}
+.services h3 {
+  font-size: 2.6rem;
+  position: absolute;
+  color: #595959;
+  font-family: "Montserrat", sans-serif;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  margin: 0;
+}
+.services h4 {
+  font-family: "Montserrat", sans-serif;
+  color: #0a0908;
+  margin: 30px 0;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #595959;
+  font-size: 2rem;
+}
+.services article p {
+  margin-bottom: 60px;
+}
+
+/*Testimonial section for mobile*/
+.testimonials {
+  text-align: center;
+}
+.testimonial-list {
+  padding: 20px 25px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  text-align: left;
+  margin-bottom: 60px;
+}
+.testimonials h2 {
+  margin: 25px 0 0;
+  text-transform: uppercase;
+}
+.testimonial-description {
+  margin-bottom: 60px;
+}
+.testimonials blockquote {
+  margin: 16px 0;
+  line-height: 1.5;
+}
+.client-info {
+  display: flex;
+  margin-top: 24px;
+  align-items: center;
+}
+.client-text {
+  padding-left: 20px;
+  width: 60%;
+}
+.client-image {
+  width: 80px;
+  height: 80px;
+}
+.client-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50px;
+  text-align: center;
+}
+.testimonials .client-name {
+  margin-bottom: 0;
+  color: #963947;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.testimonials .client-category {
+  margin-top: 0;
+  font-size: 1.4rem;
+  color: #595959;
+}
+.testimonials a,
+.projects-section a.cta-btn {
+  text-decoration: none;
+  padding: 18px 32px;
+  border: 1px solid #963947;
+  color: #963947;
+  font-weight: 500;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 75px;
+}
+
+/*Project section for mobile*/
+.projects-section {
+  text-align: center;
+}
+.projects-section h2 {
+  margin: 100px 0 0;
+  text-transform: uppercase;
+}
+.project-img {
+  height: 300px;
+  position: relative;
+  margin-bottom: 3px;
+}
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.projects-section .text-holder {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(10, 9, 8, 0.8);
+  color: #dbdbdb;
+  box-sizing: border-box;
+  padding: 16px;
+}
+.projects-section h3 {
+  margin-bottom: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  margin: 0;
+}
+.projects-section-description {
+  max-width: 340px;
+  margin: 16px auto 60px;
+}
+.projects-section a.cta-btn {
+  margin-top: 60px;
+}
+
+/*Footer section for mobile*/
+footer {
+  background-color: #0a0908;
+  color: #9e9e9e;
+}
+footer address {
+  font-style: normal;
+}
+footer .col {
+  padding-top: 60px;
+}
+footer .col-2 a {
+  padding-right: 15px;
+  display: inline-block;
+}
+footer .col-3 {
+  padding-bottom: 60px;
+}
+footer .no-margin {
+  margin: 0;
+}
+footer .top-margin {
+  margin-top: 16px;
+}
+footer h4 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  margin-top: 0;
+  color: #dbdbdb;
+}
+footer a {
+  color: #963947;
+  text-decoration: none;
+  display: block;
+  line-height: 2;
+}
+footer iframe {
+  width: 100%;
+  height: 250px;
+}
+.footer-copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 16px;
+}
+.footer-copyright p {
+  margin-bottom: 0;
+}
+
+/* Home Page styling for desktop screens */
+@media only screen and (min-width: 1200px) {
+  .mobile-container {
+    max-width: 1140px;
+  }
+  h2 {
+    font-size: 3.3rem;
+  }
+  .section-intro {
+    max-width: 830px;
+    margin: auto;
+  }
+  /*Header for desktop*/
+  header {
+    height: auto;
+    background-color: rgba(10, 9, 8, 0.5);
+  }
+  .logo img {
+    width: 220px;
+    margin-left: -20px;
+  }
+  .mobile-header {
+    flex-direction: row;
+    max-width: 1140px;
+    margin: auto;
+  }
+  .mobile-header .toggle {
+    display: none;
+  }
+  header nav {
+    display: flex;
+    position: static;
+    background-color: unset;
+    transform: unset;
+    justify-content: flex-end;
+    box-shadow: unset;
+    align-items: center;
+  }
+  nav ul {
+    display: flex;
+    gap: 45px;
+  }
+  nav a {
+    color: #fff;
+  }
+  /*Hero section for desktop*/
+  .hero {
+    background-color: unset;
+  }
+  .banner-image {
+    background: #0a0908;
+    height: 100vh;
+  }
+  .banner-image img {
+    opacity: 0.5;
+  }
+  .hero .text-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-37%);
+    max-width: 830px;
+  }
+  .hero h1,
+  .hero p {
+    color: #fff;
+  }
+  .hero h1 {
+    font-size: 4.4rem;
+  }
+  .hero a {
+    margin: 0 15px;
+  }
+  /*Services section for desktop*/
+  .services .services-div {
+    display: flex;
+    gap: 60px;
+  }
+  .services .service2 {
+    padding-top: 60px;
+  }
+  .services .service3 {
+    padding-top: 120px;
+  }
+  .services article p {
+    margin-bottom: 0;
+  }
+  /*Project section for desktop*/
+  .projects-section-description {
+    max-width: unset;
+  }
+  .projects-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px 6px;
+  }
+  .project-img {
+    width: calc(33.33% - 4px);
+    height: unset;
+    min-height: 370px;
+  }
+  .projects-section .text-holder {
+    visibility: hidden;
+    inset: 30px;
+    width: unset;
+  }
+  .project-img:hover .text-holder {
+    visibility: visible;
+  }
+  .projects-section .inner-text-holder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+  }
+  .projects-section .text-holder p {
+    margin-bottom: 0;
+  }
+  /*Testimonial section for desktop*/
+  .testimonials .testimonial-div {
+    display: flex;
+    gap: 60px;
+  }
+  /*Footer section for desktop*/
+  footer .footer-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+  footer .col {
+    width: 30%;
+  }
+}
+
+/* Projects page styling for mobile screen */
+.projects header,
+.about header {
+  position: static;
+  background-color: #963947;
+}
+.projects .tab-content {
+  display: none;
+  text-align: center;
+}
+.projects .tab-content.active {
+  display: block;
+}
+.projects h1,
+.about h1 {
+  text-align: center;
+  margin: 35px 0;
+}
+.projects .tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 60px;
+}
+.tabs a {
+  background-color: #f1f0cc;
+  color: #0a0908;
+  padding: 17px 32px;
+}
+.tabs a:first-child {
+  background-color: #0a0908;
+  color: #f1f0cc;
+}
+.projects .text-holder {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(10, 9, 8, 0.8);
+  color: #dbdbdb;
+  box-sizing: border-box;
+  padding: 16px;
+}
+.projects h3 {
+  margin-bottom: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Projects Page styling for desktop screens */
+@media only screen and (min-width: 1200px) {
+  .projects h1,
+  .about h1 {
+    font-size: 4.4rem;
+    margin: 60px 0;
+  }
+  .projects .text-holder {
+    visibility: hidden;
+    inset: 30px;
+    width: unset;
+  }
+  .projects .inner-text-holder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+  }
+  .projects .text-holder p {
+    margin-bottom: 0;
+  }
+}
+
+/* About page styling for mobile screen */
+.about .intro {
+  text-align: justify;
+  margin-bottom: 60px;
+}
+.about .architect-section {
+  background-color: #f1f0cc;
+  padding-bottom: 60px;
+}
+.about .architect-section img {
+  display: block;
+  padding-top: 18px;
+  width: 100%;
+}
+.about .affiliation {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.about .affiliation img {
+  width: 150px;
+}
+.about .affiliation th {
+  font-weight: 400;
+  padding: 5px 15px;
+}
+.about .affiliation td {
+  text-align: center;
+  padding: 5px 15px;
+}
+.about .overflow-controller {
+  overflow-x: auto;
+}
+.about .affiliation h2 {
+  margin: 60px 0 40px;
+}
+.projects .appointment h2 {
+  text-align: center;
+  margin: 100px 0 40px;
+}
+.projects .appointment form {
+  display: flex;
+  flex-direction: column;
+}
+.submit-btn {
+  text-decoration: none;
+  padding: 17px 32px;
+  width: 260px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin: 20px auto 60px;
+  color: #fff;
+  background-color: #963947;
+  border: none;
+  font-size: 1.6rem;
+}
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* About Page styling for desktop screens */
+@media only screen and (min-width: 1200px) {
+  .about .intro {
+    max-width: 830px;
+    margin: 0 auto 75px;
+  }
+  .about .architect-section {
+    padding-bottom: 0;
+  }
+  .about .architect-section .mobile-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .about .architect-section-text,
+  .about .architect-section img {
+    width: 50%;
+  }
+  .about .architect-section-text {
+    max-width: 570px;
+    margin: 0 0 0 auto;
+    padding-right: 80px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about .architect-section img {
+    padding: 0;
+    max-height: 600px;
+    object-fit: cover;
+    object-position: top;
+  }
+  .about .architect-section-text h2 {
+    margin-top: 0;
+  }
+  .about .affiliation h2 {
+    margin-top: 75px;
+  }
+  .about .affiliation {
+    margin-bottom: 75px;
+  }
+  .projects .appointment form {
+    max-width: 830px;
+    margin: auto;
+  }
+  .projects .two-cols {
+    display: flex;
+    gap: 15px;
+  }
+  .projects .two-cols input {
+    margin-right: 20px;
+    width: 30%;
+  }
+  .projects #project-type {
+    width: 30%;
+  }
+  .projects #name {
+    margin-right: 51px;
+  }
+  .projects .submit-btn {
+    margin-top: 40px;
+  }
+}
