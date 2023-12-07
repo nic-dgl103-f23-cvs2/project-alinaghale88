@@ -461,11 +461,11 @@ footer a {
   /*Footer section for desktop*/
   footer .footer-top {
     display: flex;
-    gap: 4%;
+    justify-content: space-between;
     margin-bottom: 60px;
   }
   footer .col {
-    width: 30.67%;
+    width: 30%;
   }
 }
 
@@ -517,9 +517,6 @@ footer a {
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   margin: 0;
-}
-.projects main .mobile-container {
-  margin-bottom: 75px;
 }
 
 /* Projects Page styling for desktop screens */
@@ -578,14 +575,14 @@ footer a {
 .about .overflow-controller {
   overflow-x: auto;
 }
-.about .affiliation h2,
-.about .appointment h2 {
+.about .affiliation h2 {
   margin: 60px 0 40px;
 }
-.about .appointment h2 {
+.projects .appointment h2 {
   text-align: center;
+  margin: 100px 0 40px;
 }
-.about .appointment form {
+.projects .appointment form {
   display: flex;
   flex-direction: column;
 }
@@ -653,32 +650,31 @@ label {
   .about .architect-section-text h2 {
     margin-top: 0;
   }
-  .about .affiliation h2,
-  .about .appointment h2 {
+  .about .affiliation h2 {
     margin-top: 75px;
   }
   .about .affiliation {
     margin-bottom: 75px;
   }
-  .about .appointment form {
+  .projects .appointment form {
     max-width: 830px;
     margin: auto;
   }
-  .about .two-cols {
+  .projects .two-cols {
     display: flex;
     gap: 15px;
   }
-  .about .two-cols input {
+  .projects .two-cols input {
     margin-right: 20px;
     width: 30%;
   }
-  .about #project-type {
+  .projects #project-type {
     width: 30%;
   }
-  .about #name {
+  .projects #name {
     margin-right: 51px;
   }
-  .about .submit-btn {
+  .projects .submit-btn {
     margin-top: 40px;
   }
 }
